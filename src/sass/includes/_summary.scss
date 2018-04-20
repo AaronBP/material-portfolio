@@ -1,0 +1,54 @@
+#summary {
+  margin: 150px 0;
+
+  .hello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .speech {
+      font-size: 58px;
+      font-weight: 300;
+      padding: 10px 40px;
+      background: white;
+      border-radius: 4px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      position: relative;
+      margin-left: 30px;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: -7.5px;
+        top: calc(50% - 7.5px);
+        width: 15px;
+        height: 15px;
+        transform: rotateZ(45deg);
+        background: white;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        z-index: -1;
+      }
+    }
+
+    .image {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      background-size: cover;
+      background-position: center;
+      background-image: url('/img/aaronphillips.jpg');
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      margin-right: 20px;
+
+    }
+  }
+
+  p {
+    font-size: 18px;
+    width: 585px;
+    margin: 10px auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+}

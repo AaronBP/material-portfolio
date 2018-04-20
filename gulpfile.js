@@ -16,7 +16,9 @@ var paths = {
   public: './public/',
   sass: './src/sass/',
   css: './public/css/',
-  data: './src/_data/'
+  data: './src/_data/',
+  js: './public/js/'
+
 };
 
 /**
@@ -36,10 +38,15 @@ gulp.task('pug', function () {
     .pipe(gulp.dest(paths.public));
 });
 
+gulp.task('js', function () {
+    return gulp.src('./src/js/**/*.js')
+        .pipe(gulp.dest(paths.js))
+});
+
 /**
  * Recompile .pug files and live reload the browser
  */
-gulp.task('rebuild', ['pug'], function () {
+gulp.task('rebuild', ['pug', 'js'], function () {
   browserSync.reload();
 });
 
@@ -82,6 +89,7 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
   gulp.watch(paths.sass + '**/*.scss', ['sass']);
   gulp.watch('./src/**/*.pug', ['rebuild']);
+  gulp.watch('./src/**/*.js', ['rebuild']);
 });
 
 // Build task compile sass and pug.

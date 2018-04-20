@@ -1,0 +1,98 @@
+#case-studies {
+  padding: 150px 0;
+  background-color: #FF9A8B;
+  background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+  color: white;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+  h2 {
+    font-weight: 100;
+    text-align: center;
+    font-size: 58px;
+  }
+
+  .items {
+    padding: 50px 0;
+    width: 120vw;
+    height: 400px;
+    margin-left: -10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .item {
+      width: 460px;
+      height: 340px;
+      transition: all 0.4s;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      border-radius: 5px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+
+      h3 {
+        font-size: 30px;
+        font-weight: 300;
+        margin: 0 0 16px 0;
+      }
+
+      a {
+        font-size: 14px;
+        font-weight: 300;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        transition: background-color 0.3s;
+        position: absolute;
+        border-radius: 5px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(56,56,56, 0);
+      }
+
+      &.hover,
+      &:hover {
+        width: 530px;
+        height: 400px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+        &:after {
+          background: rgba(56,56,56, 0.85);
+        }
+
+        & > * {
+          display: block;
+          z-index: 10;
+        }
+      }
+
+      > * {
+        display: none;
+      }
+
+      &.harmoly {
+        background-image: url('/img/harmoly.png');
+        background-position: center;
+        background-size: cover;
+      }
+      &.rollit {
+        background-image: url('/img/harmoly.png');
+        background-position: center;
+        background-size: cover;
+      }
+      &.workbook {
+        background-image: url('/img/harmoly.png');
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+}

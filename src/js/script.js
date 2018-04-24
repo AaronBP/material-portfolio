@@ -1,28 +1,29 @@
 $(document).ready(function() {
 
     //*** Local vars ***/
-    let isOnCaseStudies = false;
     let caseStudies = $('#case-studies');
     let caseStudyItems = caseStudies.find('.items');
     let serviceSection = $('#services');
     let services = serviceSection.find('.item');
+    let navExpanded = false;
+    let fixedNav = $('nav.fixed-nav');
     //*** END - Local vars ***/
 
-
+    $(window).scroll(function() {
+        if (!navExpanded && $(document).scrollTop() > 400) {
+            navExpanded = true;
+            fixedNav.addClass('expanded');
+        } else if (navExpanded && $(document).scrollTop() < 400) {
+            navExpanded = false;
+            fixedNav.removeClass('expanded');
+        }
+        if ($(document).scrollTop() > 100) {
+            $('#summary').find('.hello').addClass('animate')
+        }
+    });
     //*** Case Studies section animate ***//
-    // caseStudies.mouseenter(function(){
-    //     isOnCaseStudies = true;
-    //     caseStudies.addClass('mouseHover');
-    // });
-    // caseStudies.mouseleave(function(){
-    //     isOnCaseStudies = false;
-    //     caseStudies.removeClass('mouseHover');
-    //     caseStudyItems.css('transform', 'translate(0px , 0px)');
-    // });
     $(document).on('mousemove', function(event) {
-        // if (isOnCaseStudies) {
-            transformCaseStudies(event);
-        // }
+        transformCaseStudies(event);
     });
     function transformCaseStudies (event) {
         let width = $(document).width();

@@ -7,6 +7,14 @@ block head_end
 	link(rel="stylesheet" href="/css/style.css")
 
 block content
+	nav.fixed-nav
+		.left
+			a(href="/") AP
+		.right
+			a.about.waves-effect.waves-dark(href="/about.html") About
+			a.blog.waves-effect.waves-dark(href="/blog.html") Blog
+			a.contact.waves-effect.waves-dark(href="#our-future") Contact
+
 	include _partials/header
 	include _partials/summary
 	include _partials/case-studies

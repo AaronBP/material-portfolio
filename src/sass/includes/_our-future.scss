@@ -1,7 +1,7 @@
 #our-future {
   background: #383838;
   color: white;
-  padding: 150px 0;
+  padding: 200px 0 50px 0;
 
   h2 {
     font-weight: 100;
@@ -10,9 +10,8 @@
 
   h3 {
     font-weight: 300;
-    font-size: 22.5px;
-    padding: 15px 0;
-    line-height: 26px;
+    font-size: 17px;
+    line-height: 19px;
   }
 
 
@@ -22,7 +21,7 @@
   }
 
   .btn {
-    margin: 80px auto 0 auto;
+    margin: 40px auto 0 auto;
     text-align: center;
 
     &.blue-grad {
@@ -35,7 +34,7 @@
   }
 
   .md-form {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 }
 

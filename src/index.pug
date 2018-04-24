@@ -12,8 +12,9 @@ block content
 	include _partials/case-studies
 	include _partials/services
 	include _partials/testimonials
-	include _partials/our-future
-	include _partials/footer
+	.fix-footer
+		include _partials/our-future
+		include _partials/footer
 
 block body_end
 	script(type="text/javascript" src="/js/jquery-3.2.1.min.js")

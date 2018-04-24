@@ -1,0 +1,75 @@
+#our-future {
+  background: #383838;
+  color: white;
+  padding: 150px 0;
+
+  h2 {
+    font-weight: 100;
+    font-size: 58px;
+  }
+
+  h3 {
+    font-weight: 300;
+    font-size: 22.5px;
+    padding: 15px 0;
+    line-height: 26px;
+  }
+
+
+  h2, h3 {
+    text-align: center;
+    margin: 0;
+  }
+
+  .btn {
+    margin: 80px auto 0 auto;
+    text-align: center;
+
+    &.blue-grad {
+      background-color: #8EC5FC;
+      background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
+  .md-form {
+    margin-top: 50px;
+  }
+}
+
+
+.btn i {
+  position: relative;
+  padding-left: 15px;
+}
+i {
+  display: inline-block;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.9);;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+  &:focus {
+    color: rgba(255,255,255,0.9);
+  }
+}
+.md-form label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  color: rgba(255,255,255,0.8);
+}

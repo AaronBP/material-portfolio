@@ -3,13 +3,21 @@ extends _layouts/home
 block head_end
 	link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim|Roboto:100,300,400,900")
 	link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
-	link(rel="stylesheet" href="/css/style.css") 
+	link(rel="stylesheet" href="/css/bootstrap.min.css")
+	link(rel="stylesheet" href="/css/style.css")
 
 block content
 	include _partials/header
 	include _partials/summary
 	include _partials/case-studies
 	include _partials/services
+	include _partials/testimonials
+	include _partials/our-future
+	include _partials/footer
 
 block body_end
+	script(type="text/javascript" src="/js/jquery-3.2.1.min.js")
+	script(type="text/javascript" src="/js/popper.min.js")
+	script(type="text/javascript" src="/js/bootstrap.min.js")
+	script(type="text/javascript" src="/js/mdb.min.js")
 	script(type="text/javascript" src="/js/script.js")

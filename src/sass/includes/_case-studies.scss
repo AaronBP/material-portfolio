@@ -6,6 +6,10 @@
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
+  &.mouseHover .items {
+    transition: none;
+  }
+
   h2 {
     font-weight: 100;
     text-align: center;
@@ -13,6 +17,7 @@
   }
 
   .items {
+    transition: all 0.3s ease;
     padding: 50px 0;
     width: 120vw;
     height: 400px;
@@ -33,6 +38,7 @@
       flex-direction: column;
       text-align: center;
       position: relative;
+      margin: 0 10px;
 
       h3 {
         font-size: 30px;

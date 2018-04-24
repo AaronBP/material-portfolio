@@ -1,5 +1,21 @@
+@import "mdb";
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
 @import "includes/base";
 @import "includes/header";
 @import "includes/summary";
 @import "includes/case-studies";
 @import "includes/services";
+@import "includes/testimonials";
+@import "includes/our-future";
+@import "includes/footer";

@@ -1,0 +1,52 @@
+#about-content {
+  margin-bottom: 700px;
+  background: #fafafa;
+
+  section {
+    padding-bottom: 200px;
+
+    .row {
+      align-items: center;
+    }
+
+    &:first-of-type {
+      padding-top: 200px;
+    }
+
+
+
+    &#more {
+      h2 {
+        text-align: right;
+      }
+      p {
+        text-align-last: right;
+        -moz-text-align-last: right;
+      }
+    }
+  }
+
+  h2, h3 {
+    font-weight: 100;
+    font-size: 48px;
+    color: #494949;
+  }
+
+  h3 {
+    font-size: 58px;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 15px;
+    color: #727272;
+    text-align: justify;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+
+}

@@ -14,6 +14,7 @@ var gulp = require('gulp'),
  */
 var paths = {
   public: './public/',
+  publicCaseStudies: './public/case-studies',
   sass: './src/sass/',
   css: './public/css/',
   data: './src/_data/',
@@ -38,6 +39,19 @@ gulp.task('pug', function () {
     .pipe(gulp.dest(paths.public));
 });
 
+gulp.task('pug-case-studies', function () {
+    return gulp.src('./src/case-studies/*.pug')
+    .pipe(data(function (file) {
+        return require(paths.data + path.basename(file.path) + '.json');
+    }))
+    .pipe(pug())
+    .on('error', function (err) {
+        process.stderr.write(err.message + '\n');
+        this.emit('end');
+    })
+    .pipe(gulp.dest(paths.publicCaseStudies));
+});
+
 gulp.task('js', function () {
     return gulp.src('./src/js/**/*.js')
         .pipe(gulp.dest(paths.js))
@@ -53,7 +67,7 @@ gulp.task('rebuild', ['pug', 'js'], function () {
 /**
  * Wait for pug and sass tasks, then launch the browser-sync Server
  */
-gulp.task('browser-sync', ['sass', 'pug'], function () {
+gulp.task('browser-sync', ['sass', 'pug', 'pug-case-studies'], function () {
   browserSync({
     server: {
       baseDir: paths.public
@@ -93,7 +107,7 @@ gulp.task('watch', function () {
 });
 
 // Build task compile sass and pug.
-gulp.task('build', ['sass', 'pug']);
+gulp.task('build', ['sass', 'pug', 'pug-case-studies']);
 
 /**
  * Default task, running just `gulp` will compile the sass,

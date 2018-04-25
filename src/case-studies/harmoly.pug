@@ -1,4 +1,4 @@
-extends _layouts/about
+extends ../_layouts/home
 
 block head_end
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim|Roboto:100,300,400,900")
@@ -15,7 +15,10 @@ block content
             a.blog.waves-effect.waves-dark(href="/blog.html") Blog
             a.contact.waves-effect.waves-dark(href="#our-future") Contact
 
-    include _partials/about/header
+    include ../_partials/index/case-studies
+    .fix-footer
+        include ../_partials/index/our-future
+        include ../_partials/index/footer
 
 block body_end
     script(type="text/javascript" src="/js/jquery-3.2.1.min.js")

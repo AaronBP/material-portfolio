@@ -60,7 +60,7 @@ $width: 250px;
       i {
         font-size: 90px;
         transform: translateY(40px);
-        transition: transform 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+        transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
       }
 
       h3 {
@@ -99,6 +99,7 @@ $width: 250px;
 
         i {
           transform: translateY(40px)!important;
+          font-size: 45px;
         }
         h3, a {
           opacity: 0 !important;

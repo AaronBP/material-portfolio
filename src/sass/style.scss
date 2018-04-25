@@ -1,13 +1,20 @@
 @import "mdb";
 
-@import "includes/base";
 @import "includes/header";
-@import "includes/summary";
-@import "includes/case-studies";
-@import "includes/services";
-@import "includes/testimonials";
-@import "includes/our-future";
-@import "includes/footer";
+// Index specific styles
+#index {
+  @import "includes/index/base";
+  @import "includes/index/summary";
+  @import "includes/index/case-studies";
+  @import "includes/index/services";
+  @import "includes/index/testimonials";
+  @import "includes/index/our-future";
+  @import "includes/index/footer";
+}
+// About styles
+#about {
+  @import "includes/about/header";
+}
 
 .sr-only {
   position: absolute;
@@ -44,6 +51,9 @@ nav {
     padding-left: 20px;
     padding-top: 5px;
     font-size: 40px;
+      a:hover {
+        color: rgba(255,255,255,0.6)
+      }
   }
   .right {
     font-weight: 300;
@@ -52,6 +62,10 @@ nav {
       margin-right: 10px;
       padding: 8px 20px;
       font-size: 14px;
+
+      &:hover {
+        color: rgba(255,255,255,0.6)
+      }
     }
     .about {
       animation: fadeInFromRight 1s cubic-bezier(0.4, 0.0, 0.2, 1) 1.4s;
@@ -81,6 +95,10 @@ nav {
     z-index: 100;
     box-shadow: none;
     opacity: 0;
+
+    a:hover {
+      color: rgba(0,0,0,0.6)
+    }
 
     &.expanded {
       top: 0;

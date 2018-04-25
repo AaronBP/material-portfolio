@@ -1,32 +1,32 @@
 extends _layouts/home
 
 block head_end
-	link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim|Roboto:100,300,400,900")
-	link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
-	link(rel="stylesheet" href="/css/bootstrap.min.css")
-	link(rel="stylesheet" href="/css/style.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim|Roboto:100,300,400,900")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    link(rel="stylesheet" href="/css/bootstrap.min.css")
+    link(rel="stylesheet" href="/css/style.css")
 
 block content
-	nav.fixed-nav
-		.left
-			a(href="/") AP
-		.right
-			a.about.waves-effect.waves-dark(href="/about.html") About
-			a.blog.waves-effect.waves-dark(href="/blog.html") Blog
-			a.contact.waves-effect.waves-dark(href="#our-future") Contact
+    nav.fixed-nav
+        .left
+            a(href="/") AP
+        .right
+            a.about.waves-effect.waves-dark(href="/about.html") About
+            a.blog.waves-effect.waves-dark(href="/blog.html") Blog
+            a.contact.waves-effect.waves-dark(href="#our-future") Contact
 
-	include _partials/header
-	include _partials/summary
-	include _partials/case-studies
-	include _partials/services
-	include _partials/testimonials
-	.fix-footer
-		include _partials/our-future
-		include _partials/footer
+    include _partials/index/header
+    include _partials/index/summary
+    include _partials/index/case-studies
+    include _partials/index/services
+    include _partials/index/testimonials
+    .fix-footer
+        include _partials/index/our-future
+        include _partials/index/footer
 
 block body_end
-	script(type="text/javascript" src="/js/jquery-3.2.1.min.js")
-	script(type="text/javascript" src="/js/popper.min.js")
-	script(type="text/javascript" src="/js/bootstrap.min.js")
-	script(type="text/javascript" src="/js/mdb.min.js")
-	script(type="text/javascript" src="/js/script.js")
+    script(type="text/javascript" src="/js/jquery-3.2.1.min.js")
+    script(type="text/javascript" src="/js/popper.min.js")
+    script(type="text/javascript" src="/js/bootstrap.min.js")
+    script(type="text/javascript" src="/js/mdb.min.js")
+    script(type="text/javascript" src="/js/script.js")

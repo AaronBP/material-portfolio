@@ -27,7 +27,6 @@ header {
         display: inline-block;
         width: 100%;
         line-height: 20px;
-
       }
     }
 
@@ -73,5 +72,19 @@ header {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header .title {
+    h1, h2 {
+      width: 300px;
+      line-height: initial;
+      text-align: center;
+
+      &:after {
+        display: none;
+      }
+    }
   }
 }

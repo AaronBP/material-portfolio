@@ -8,6 +8,7 @@ $(document).ready(function() {
     let navExpanded = false;
     let fixedNav = $('nav.fixed-nav');
     let contactNavButton = $('nav .right .contact');
+    let width = $(document).width();
     //*** END - Local vars ***/
 
     $(window).scroll(function() {
@@ -24,10 +25,12 @@ $(document).ready(function() {
     });
     //*** Case Studies section animate ***//
     $(document).on('mousemove', function(event) {
-        transformCaseStudies(event);
+        width = $(document).width();
+        if (width > 992) {
+            transformCaseStudies(event);
+        }
     });
     function transformCaseStudies (event) {
-        let width = $(document).width();
         let percentageWidth = (event.pageX / width) * 100;
         let itemsTransform = - (percentageWidth - 50) / 4;
         caseStudyItems.css('transform', 'translate(' + itemsTransform + '% , 0px)');

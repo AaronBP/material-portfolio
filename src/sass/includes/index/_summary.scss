@@ -108,3 +108,32 @@
     left: -7.5;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #summary {
+    p {
+      width: auto;
+    }
+
+    .hello {
+      .image{
+        transform: translateX(0);
+        margin: 0;
+      }
+      .speech-bubble {
+        display: none;
+      }
+      &.animate {
+        .image {
+          animation: none;
+        }
+        .speech {
+          animation: none;
+        }
+        .speech-arrow {
+          animation: none;
+        }
+      }
+    }
+  }
+}

@@ -21,3 +21,12 @@
 #case-studies {
   margin-bottom: 650px;
 }
+
+@media screen and (max-width: 768px) {
+  #case-studies {
+    margin-bottom: 0;
+  }
+  #study-body.coming-soon img {
+    width: 300px;
+  }
+}

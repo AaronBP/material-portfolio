@@ -1,8 +1,8 @@
-## Aaron Phillips portfolio website
+# Aaron Phillips portfolio website
 
 This website was created using the Pug-Sass Starter project here: https://github.com/azemoh/gulp-pug-sass-seed
 
-###Technologies used
+##Technologies used
 - Gulp
 - SCSS
 - PUG

@@ -40,7 +40,7 @@ gulp.task('pug', function () {
 });
 
 gulp.task('pug-case-studies', function () {
-    return gulp.src('./src/case-studies/*.pug')
+    return gulp.src('./src/case-studies/**/*.pug')
     .pipe(data(function (file) {
         return require(paths.data + path.basename(file.path) + '.json');
     }))

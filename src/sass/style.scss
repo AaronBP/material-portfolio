@@ -4,17 +4,24 @@
 @import "includes/index/case-studies";
 @import "includes/index/our-future";
 @import "includes/index/footer";
-// Index specific styles
+
 #index {
   @import "includes/index/base";
   @import "includes/index/summary";
   @import "includes/index/services";
   @import "includes/index/testimonials";
 }
-// About styles
-#about {
+
+#about, #case-study{
   @import "includes/about/header";
+}
+
+#about {
   @import "includes/about/about-content";
+}
+
+#case-study {
+  @import "includes/case-studies/case-study";
 }
 
 .sr-only {

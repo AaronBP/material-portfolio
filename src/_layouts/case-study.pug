@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        title= title
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim|Roboto:100,300,400,900")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet" href="/css/bootstrap.min.css")
+        link(rel="stylesheet" href="/css/style.css")
+
+    body#case-study
+        nav.fixed-nav
+            .left
+                a(href="/") AP
+            .right
+                a.about.waves-effect.waves-dark(href="/about.html") About
+                a.blog.waves-effect.waves-dark(href="/blog.html") Blog
+                a.contact.waves-effect.waves-dark(href="#our-future") Contact
+
+        block content
+        include ../_partials/index/case-studies
+        .fix-footer
+            include ../_partials/index/our-future
+            include ../_partials/index/footer
+
+        script(type="text/javascript" src="/js/jquery-3.2.1.min.js")
+        script(type="text/javascript" src="/js/popper.min.js")
+        script(type="text/javascript" src="/js/bootstrap.min.js")
+        script(type="text/javascript" src="/js/mdb.min.js")
+        script(type="text/javascript" src="/js/script.js")

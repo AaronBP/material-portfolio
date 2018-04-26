@@ -44,6 +44,7 @@
       position: relative;
       margin: 0 10px;
 
+
       h3 {
         font-size: 30px;
         font-weight: 300;
@@ -65,7 +66,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(56,56,56, 0);
+        background: rgba(56,56,56, 0.85);
       }
 
       &.hover,
@@ -74,32 +75,27 @@
         height: 400px;
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
-        &:after {
-          background: rgba(56,56,56, 0.85);
-        }
-
         & > * {
           display: block;
-          z-index: 10;
         }
       }
 
       > * {
-        display: none;
+        z-index: 10;
       }
 
       &.harmoly {
-        background-image: url('/img/harmoly.png');
+        background-image: url('/img/harmoly2.jpg');
         background-position: center;
         background-size: cover;
       }
       &.rollit {
-        background-image: url('/img/harmoly.png');
+        background-image: url('/img/roll-it-super.jpg');
         background-position: center;
         background-size: cover;
       }
       &.workbook {
-        background-image: url('/img/harmoly.png');
+        background-image: url('/img/workbook.jpg');
         background-position: center;
         background-size: cover;
       }

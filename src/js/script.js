@@ -7,6 +7,7 @@ $(document).ready(function() {
     let services = serviceSection.find('.item');
     let navExpanded = false;
     let fixedNav = $('nav.fixed-nav');
+    let contactNavButton = $('nav .right .contact');
     //*** END - Local vars ***/
 
     $(window).scroll(function() {
@@ -44,5 +45,10 @@ $(document).ready(function() {
         }
     });
     //*** END - Services section animate ***//
+    contactNavButton.on('click', function() {
+        $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+    });
+    //*** Scroll to contact ***//
+
 });
 

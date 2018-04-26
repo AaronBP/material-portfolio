@@ -6,15 +6,15 @@ section#our-future
                 h3 This could be the part where our paths merge.
                     br
                     | Tell me about your project.
-                form
+                form(action="https://formspree.io/developingaaron@gmail.com" method="post")
                     .md-form
-                        input(type="text" id="name" class="form-control")
+                        input(type="text" id="name" class="form-control" name="name" required)
                         label(for="name") Name
                     .md-form
-                        input(type="email" id="email" class="form-control")
+                        input(type="email" id="email" class="form-control" name="email" required)
                         label(for="email") Email
                     .md-form
-                        textarea#message.form-control.md-textarea(type='text', rows='1')
+                        textarea#message.form-control.md-textarea(type='text', rows='1' name="message" required)
                         label(for='message') Message
                     button.btn.btn-rounded.waves-effect.waves-light.btn-lg.blue-grad SEND
                         //i.material-icons send

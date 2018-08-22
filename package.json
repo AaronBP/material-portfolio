@@ -1,9 +1,9 @@
 {
-  "name": "gulp-pug-sass-starter",
+  "name": "aaron-phillips-material-portfolio",
   "version": "1.0.0",
-  "description": "A Pug and Sass starter project using gulp for task automation.",
+  "description": "A portfolio website",
   "main": "gulpfile.js",
-  "author": "Joshua Azemoh <joshazemoh@gmail.com> (http://azemoh.com)",
+  "author": "Aaron Phillips",
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
@@ -19,13 +19,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/azemoh/gulp-pug-sass-seed.git"
+    "url": "https://github.com/AaronBP/material-portfolio.git"
   },
   "keywords": [
     "jade",
     "gulp",
     "pug",
     "sass",
-    "browsersync"
+    "browsersync",
+    "portfolio"
   ]
 }
